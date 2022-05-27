@@ -41,15 +41,14 @@ class _ContactMeBodyState extends State<ContactMeBody> {
                         fontWeight: FontWeight.w800),
                     speed: const Duration(seconds: 2),
                     entryEnd: 1),
-                FlickerAnimatedText('So below are various ways to reach me',
+                FlickerAnimatedText('here are various ways to\nreach me',
                     textStyle: const TextStyle(
                         color: Colors.grey,
                         fontSize: 20,
                         fontWeight: FontWeight.w800),
                     speed: const Duration(seconds: 2),
                     entryEnd: 1),
-                FlickerAnimatedText(
-                    "Please reach out, am aching to hear from you!",
+                FlickerAnimatedText("Kindly reach out",
                     textStyle: const TextStyle(
                         color: Colors.red,
                         fontSize: 20,
@@ -90,10 +89,26 @@ class _ContactMeBodyState extends State<ContactMeBody> {
                 child: AnimatedTextKit(
                   repeatForever: true,
                   animatedTexts: [
-                    ScaleAnimatedText('Looking forward to hearing from you',
-                        textStyle:
-                            const TextStyle(color: Colors.white, fontSize: 30),
+                    ScaleAnimatedText('See you soon!!!',
+                        textStyle: const TextStyle(
+                            color: Colors.cyanAccent, fontSize: 30),
                         scalingFactor: 0.2),
+                    ScaleAnimatedText('See you soon!!!',
+                        textStyle: const TextStyle(
+                            color: Colors.redAccent, fontSize: 30),
+                        scalingFactor: 0.2),
+                    ScaleAnimatedText('See you soon!!!',
+                        textStyle: const TextStyle(
+                            color: Colors.blueAccent, fontSize: 30),
+                        scalingFactor: 0.2),
+                    ScaleAnimatedText('See you soon!!!',
+                        textStyle: const TextStyle(
+                            color: Colors.indigoAccent, fontSize: 30),
+                        scalingFactor: 0.2),
+                    ScaleAnimatedText('See you soon!!!',
+                        textStyle: const TextStyle(
+                            color: Colors.orangeAccent, fontSize: 30),
+                        scalingFactor: 0.2)
                   ],
                 ),
               ),

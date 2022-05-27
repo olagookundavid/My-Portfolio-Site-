@@ -2,9 +2,7 @@ import 'package:flutter/material.dart';
 import 'infotext.dart';
 
 class BottomBar extends StatelessWidget {
-  const BottomBar({
-    Key? key,
-  }) : super(key: key);
+  const BottomBar({Key? key}) : super(key: key);
   static const Color gradientStartColor = Color(0xff11998e);
   static const Color gradientEndColor = Color(0xff0575E6);
   @override
@@ -20,7 +18,9 @@ class BottomBar extends StatelessWidget {
             stops: [0.0, 1.0],
             tileMode: TileMode.clamp),
       ),
-      padding: const EdgeInsets.all(30),
+      padding: MediaQuery.of(context).size.width < 800
+          ? const EdgeInsets.symmetric(vertical: 30, horizontal: 8)
+          : const EdgeInsets.all(30),
       child: MediaQuery.of(context).size.width < 800
           ? Column(
               children: [
