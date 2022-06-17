@@ -18,6 +18,7 @@ class MyApp extends StatelessWidget {
       title: 'David OH portfolio',
       theme: ThemeData(
         visualDensity: VisualDensity.adaptivePlatformDensity,
+        scaffoldBackgroundColor: Colors.blue[200],
       ),
       debugShowCheckedModeBanner: false,
       home: const HomePage(),

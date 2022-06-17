@@ -35,24 +35,21 @@ class HomeBody2 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      color: Colors.black,
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          const BodyText(text: 'Hi, Hey There,'),
-          const BodyText(text: 'I\'m David OH, A Flutter Developer.'),
-          const BodyText2(),
-          Center(
-              child: RoundedButton(
-            title: 'Let\'s Connect',
-            colour: Colors.white,
-            onPressed: () {
-              Navigator.of(context).pushNamed(ContactMe.id);
-            },
-          )),
-        ],
-      ),
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        const BodyText(text: 'Hi, Hey There,'),
+        const BodyText(text: 'I\'m David OH, A Flutter Developer.'),
+        const BodyText2(),
+        Center(
+            child: RoundedButton(
+          title: 'Let\'s Connect',
+          colour: Colors.white,
+          onPressed: () {
+            Navigator.of(context).pushNamed(ContactMe.id);
+          },
+        )),
+      ],
     );
   }
 }
@@ -66,10 +63,10 @@ class BodyText extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 5),
       child: Text(
         text,
-        style: const TextStyle(
+        style: TextStyle(
             fontSize: 40,
             fontWeight: FontWeight.bold,
-            color: Colors.green,
+            color: Colors.green[300],
             fontStyle: FontStyle.italic),
       ),
     );
@@ -115,7 +112,7 @@ class BodyText2 extends StatelessWidget {
                     duration: const Duration(seconds: 3),
                     fadeOutBegin: 0.9,
                     fadeInEnd: 0.7),
-                FadeAnimatedText('- Mobile responsive/adaptive designs',
+                FadeAnimatedText('- Responsive/Adaptive designs',
                     textStyle: const TextStyle(
                         color: Colors.green,
                         fontSize: 20,

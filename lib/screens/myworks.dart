@@ -47,7 +47,6 @@ class _MyWorksState extends State<MyWorks> {
           ],
         ),
       ),
-      backgroundColor: Colors.black,
     );
   }
 }

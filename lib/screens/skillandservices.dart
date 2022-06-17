@@ -16,7 +16,6 @@ class _SkillsAndServicesState extends State<SkillsAndServices> {
   @override
   Widget build(BuildContext context) {
     var screenwidth = MediaQuery.of(context).size.width;
-    var screenheight = MediaQuery.of(context).size.height;
     return Scaffold(
       appBar: screenwidth < 800
           ? AppBar(
@@ -39,7 +38,9 @@ class _SkillsAndServicesState extends State<SkillsAndServices> {
         child: Column(
           children: [
             SkillsAndServicesBody(width: screenwidth),
-            SizedBox(height: screenheight / 6),
+            const SizedBox(
+              height: 15,
+            ),
             const Align(
               alignment: Alignment.bottomCenter,
               child: BottomBar(),
@@ -47,7 +48,7 @@ class _SkillsAndServicesState extends State<SkillsAndServices> {
           ],
         ),
       ),
-      backgroundColor: Colors.black,
+      // backgroundColor: Colors.black,
     );
   }
 }

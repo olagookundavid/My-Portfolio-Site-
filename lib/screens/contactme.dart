@@ -47,7 +47,6 @@ class _ContactMeState extends State<ContactMe> {
           ],
         ),
       ),
-      backgroundColor: Colors.black,
     );
   }
 }

@@ -47,7 +47,7 @@ class _AboutMeState extends State<AboutMe> {
           ],
         ),
       ),
-      backgroundColor: Colors.black,
+      // backgroundColor: Colors.black,
     );
   }
 }
