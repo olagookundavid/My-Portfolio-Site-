@@ -34,7 +34,7 @@ class _ContactMeBodyState extends State<ContactMeBody> {
             animatedTexts: [
               FlickerAnimatedText('I am no ghost,',
                   textStyle: TextStyle(
-                      color: Colors.blue[200],
+                      color: Colors.brown[200],
                       fontSize: 20,
                       fontWeight: FontWeight.w800),
                   speed: const Duration(seconds: 3),

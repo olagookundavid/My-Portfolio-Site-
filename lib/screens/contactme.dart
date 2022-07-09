@@ -23,7 +23,7 @@ class _ContactMeState extends State<ContactMe> {
               centerTitle: true,
               iconTheme: const IconThemeData(color: Colors.blue),
               elevation: 0,
-              backgroundColor: Colors.lightBlueAccent, //.withOpacity(_opacity),
+              backgroundColor: Colors.lightBlueAccent,
               title: const Icon(
                 Icons.message,
                 size: 30,

@@ -28,7 +28,7 @@ class SkillsAndServicesBody extends StatelessWidget {
         getSkill(Icons.circle, 'Flutter Mobile / Flutter Web'),
         getSkill(Icons.circle, 'FireBase / FireStore'),
         getSkill(Icons.circle, 'Local Storage'),
-        getSkill(Icons.circle, 'Provider (state management)'),
+        getSkill(Icons.circle, 'Provider / Riverpod'),
         MediaQuery.of(context).size.width < 800
             ? SizedBox(
                 height: 150,

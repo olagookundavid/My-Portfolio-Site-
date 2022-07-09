@@ -39,7 +39,7 @@ class _MyWorksState extends State<MyWorks> {
         child: Column(
           children: [
             const MyWorkBody(),
-            SizedBox(height: screenheight / 6),
+            SizedBox(height: screenheight / 10),
             const Align(
               alignment: Alignment.bottomCenter,
               child: BottomBar(),
